@@ -8,8 +8,8 @@ import sys, time, os
 from os.path import abspath, dirname
 sys.path.append(dirname(dirname(__file__)))
 
-import analysis.figure_functions as ff
-import analysis.waveform_func as wf
+import Analysis.Fig_Funcs as ff
+import Analysis.Waveform_Funcs as wf
 import pandas as pd
 from math import *
 
@@ -17,8 +17,8 @@ import sys, time, os
 from os.path import abspath, dirname
 sys.path.append(dirname(dirname(__file__)))
 from collections import OrderedDict
-import analysis.Cvt_Mdls as cm
-import analysis.CWT as cwt
+import Analysis.Cvt_Mdls as cm
+import Analysis.CWT as cwt
 
 
 current, B_oc, B_ic = [], [], []

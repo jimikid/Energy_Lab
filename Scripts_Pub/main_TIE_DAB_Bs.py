@@ -15,9 +15,9 @@ import sys, time, os
 from os.path import abspath, dirname
 sys.path.append(dirname(dirname(__file__)))
 from collections import OrderedDict
-import analysis.Cvt_Mdls as cm
-import analysis.CWT as cwt
-import analysis.figure_functions as ff
+import Analysis.Cvt_Mdls as cm
+import Analysis.CWT as cwt
+import Analysis.Fig_Funcs as ff
 
 fs = 20000.0;
 
