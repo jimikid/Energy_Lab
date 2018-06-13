@@ -13,8 +13,9 @@ from math import *
 import pandas as pd
 import matplotlib.pyplot as plt
 import pandas as pd
-import analysis.figure_functions as ff
-import analysis.waveform_func as wf
+import Analysis.Fig_Funcs as ff
+import Analysis.Waveform_Funcs as wf
+
 
 
 current, B_oc, B_ic = [], [], []

@@ -9,7 +9,8 @@ Created on 03/18/2016, @author: sbaek
 from __future__ import division 
 from math import *
 import win32com.client 
-oAnsoftApp = win32com.client.Dispatch("Ansoft.ElectronicsDesktop")
+#oAnsoftApp = win32com.client.Dispatch("Ansoft.ElectronicsDesktop")
+oAnsoftApp = win32com.client.Dispatch("AnsoftMaxwell.MaxwellScriptInterface")
 oDesktop = oAnsoftApp.GetAppDesktop()
     
 def main(name):    
@@ -26,8 +27,8 @@ def main(name):
 
    
 if __name__ == '__main__':            
-    names=[["620_00504r03_Q14", "pcb_v01_Q14"],
-           ["620_00504r03_Q14", "pcb_v02_Q14"]]
+    names=[["test", "Design1"],
+           ["test", "Design1"]]
     for name in names:
         try:
             main(name)
